@@ -32,7 +32,7 @@ regressor.fit(x_train, y_train)
 # Predicting the Test set results
 y_pred = regressor.predict(x_test)
 
-#building the optimal model using backward elimination
+# building the optimal model using backward elimination
 import statsmodels.formula.api as sm
 x = np.append(arr = np.ones((50, 1)).astype(int), values = x, axis = 1)
 x_opt = x[:, [0, 1, 2, 3, 4, 5]]
